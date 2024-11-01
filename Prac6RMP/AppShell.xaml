@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Prac6RMP.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Prac6RMP"
+    Shell.FlyoutBehavior="Disabled"
+    Title="Prac6RMP">
+
+    <TabBar>
+        <Tab Title="MainPage">
+            <ShellContent Title="MainPage"
+        ContentTemplate="{DataTemplate local:MainPage}"/>
+        </Tab>
+        <Tab Title="AlarmPage">
+            <ShellContent Title="AlarmPage"
+    ContentTemplate="{DataTemplate local:AlarmPage}"/>
+
+        </Tab>
+        <Tab Title="ClockPage">
+            <ShellContent Title="ClockPage"
+    ContentTemplate="{DataTemplate local:ClockPage}"/>
+        </Tab>
+        <Tab Title="StopwatchPage">
+            <ShellContent Title="StopwatchPage"
+ContentTemplate="{DataTemplate local:StopwatchPage}"/>
+        </Tab>
+        <Tab Title="TimerPage">
+            <ShellContent Title="TimerPage"
+ContentTemplate="{DataTemplate local:TimerPage}"/>
+        </Tab>
+    </TabBar>
+
+</Shell>
